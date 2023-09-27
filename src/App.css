@@ -1,42 +1,105 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin:0;
+  color:white;
+  background: #23252C;
+  display: flex;
+  width: 550px;
+  height: 868px;
+  padding: 44px 117px 44px 116px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0; 
+  
+}
+
+.info{
+  width: 317px;
+  height: 716px;
+  flex-shrink: 0; 
+  background: #1A1B21; 
+}
+
+.info--image{
+  width: 317px;
+  height: 317px; 
+  border-radius: 10px 10px 0px 0px;
+  background: url(<path-to-image>), lightgray -207.665px -133.577px / 210.625% 315.631% no-repeat;        
+}
+
+.info--name{
+  /* width: 170px;
+  height: 25px; */
+  flex-shrink: 0; 
+  color: #FFF;
   text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: normal; 
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.info--title{
+  /* width: 178.065px; */
+  height: 14.194px; 
+  flex-shrink: 0; 
+  color: #F3BF99;
+  text-align: center;
+  font-size: 12.8px;
+  font-weight: 400;
+  line-height: normal; 
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.info--website {
+  color: #F5F5F5;
+  text-align: center;
+  font-size: 10.24px;
+  font-weight: 400;
+  line-height: 150%;
+  height: 16px; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+button{
+  display: flex;
+  width: 115px;
+  padding: 9px 13px 9px 11px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px; 
+  border-radius: 6px;
+  color: var(--gray-700, #374151);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px; /* 114.286% */ 
+   display: inline-block;
+  
+}
+.email-button{
+  margin: 35px;
+  border: 1px solid var(--gray-300, #D1D5DB);
+  background: var(--white, #FFF);
+  /* shadow/sm */
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05); 
+  
 }
 
-.card {
-  padding: 2em;
+.linkedin-button{
+  margin: -18px;
+  background: #5093E2;
+  color: #FFF; 
+  /* shadow/sm */
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);    
 }
 
-.read-the-docs {
-  color: #888;
+
+
+footer {
+  width: 317px;
+  height: 64px; 
+  border-radius: 0px 0px 10px 10px;
+  background: #161619;
+  
 }
